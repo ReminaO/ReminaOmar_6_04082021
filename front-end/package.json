@@ -15,6 +15,7 @@
     "express": "^4.17.1",
     "http-server": "^0.12.3",
     "live-server": "^1.2.1",
+    "maskdata": "^1.1.6",
     "mongoose": "^5.13.5",
     "run-script-os": "^1.0.7"
   }
