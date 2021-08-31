@@ -1,4 +1,6 @@
 // import des différents modules
+const dotenv = require('dotenv');
+dotenv.config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
@@ -8,12 +10,15 @@ const path = require('path');
 const saucesRoutes = require('../back-end/routes/sauces');
 const userRoutes = require('../back-end/routes/user');
 
+
 //Connection a la base de données MongoDB
-mongoose.connect('mongodb+srv://remina:Nivea29@piiquante.9wpyf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
-  { useNewUrlParser: true,
-    useUnifiedTopology: true })
-  .then(() => console.log('Connexion à MongoDB réussie !'))
-  .catch(() => console.log('Connexion à MongoDB échouée !'));
+  mongoose.connect(process.env.MONGOLAB_URI,
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true
+    })
+    .then(() => console.log('Connexion à MongoDB réussie !'))
+    .catch(() => console.log('Connexion à MongoDB échouée !'));
 
 const app = express();
 
