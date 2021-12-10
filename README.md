@@ -31,15 +31,15 @@ The, clone this repo and run `npm install`.
 
 ### For The Backend :
 
-Run node server. This should run the local server.
+Run `node server`. This should run the local server.
 
-The server should run on localhost with default port 3000.
+The server should run on localhost with default `port 3000`.
 
 ### For the Frontend :
 
-Run npm start. This should both run the local server and launch your browser.
+Run `npm start`. This should launch your browser.
 
-If your browser fails to launch, or shows a 404 error, navigate your browser to http://localhost:8080.
+If your browser fails to launch, or shows a 404 error, navigate your browser to `http://localhost:8080`.
 
 The app should reload automatically when you make a change to a file.
 
